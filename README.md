@@ -28,11 +28,11 @@ You can use the following link to download the model:
 [https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true](https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true)
 
 
-> **None**
+> **Note**
 You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
 [https://github.com/ggerganov/llama.cpp/releases/tag/b1692](https://github.com/ggerganov/llama.cpp/releases/tag/b1692)
 
-> **None**
+> **Note**
 if you have an NVIDIA GPU, use the cublas version for best performance:
 [https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip](https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip)
 
