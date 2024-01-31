@@ -29,7 +29,7 @@ You can use the following link to download the model:
 
 
 > **None**
-You might want to replace llama.dll and llava_shared.dll with one that fits your platform:
+You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
 [https://github.com/ggerganov/llama.cpp/releases/tag/b1692](https://github.com/ggerganov/llama.cpp/releases/tag/b1692)
 
 > **None**
