@@ -15,7 +15,7 @@ This asset serves as an excellent starting point for exploring and utilizing Lar
 
 ## System Requirements
 Please refer to [this section](https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#memorydisk-requirements) for information on memory and disk requirements. 
-In general, it is recommended to use a machine with an 8GB Nvidia GPU, a modern processor, and 32GB RAM.
+The recommended machine is one with an 8GB Nvidia GPU, a modern processor, and 32GB RAM.
 
 ## Getting Started
 1. Open Assets/Battlehub/Chat scene
@@ -23,10 +23,16 @@ In general, it is recommended to use a machine with an 8GB Nvidia GPU, a modern 
 3. Copy orca-2-7b.Q5_K_S.gguf to **Assets/StreamingAssets** folder 
 4. Enter play mode
 
+> **Note**
+You can use the following link to download the model:
+[https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true](https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true)
+
+
 > **None**
 You might want to replace llama.dll and llava_shared.dll with one that fits your platform:
 [https://github.com/ggerganov/llama.cpp/releases/tag/b1692](https://github.com/ggerganov/llama.cpp/releases/tag/b1692)
 
+> **None**
 if you have an NVIDIA GPU, use the cublas version for best performance:
 [https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip](https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip)
 
@@ -37,10 +43,6 @@ The current supported version is b1692. Support for more recent versions will be
 To build llama.cpp from source, please refer to the following section:
 [https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage](https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage)
 
-> **Note**
-You can use the following link to download the model:
-[https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true](https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true)
-   
 ![Getting Started Result][getting_started_result]
 
 ## Definitions
@@ -63,7 +65,7 @@ Config files are JSON files with serialized **gpt_params** structure. Example co
 
 To load a config file using the Chat UI, use the "Load gpt params" button.
 
-[Load GPT Params button][load_gpt_params]
+![Load GPT Params button][load_gpt_params]
 
 ## Examples
 ### Dummy LLM Implementation
