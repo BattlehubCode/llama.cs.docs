@@ -1,6 +1,8 @@
 # llama.cs for Unity
 [llama.cs](https://assetstore.unity.com/packages/tools/ai-ml-integration/llama-cs-275927) is a simple implementation of an **LLM Chat** built on top of **llama.cs**, the C# binding for [llama.cpp](https://github.com/ggerganov/llama.cpp). It includes llama.cs, high-level APIs like LLM, LLMHost, and a Chat UI.
 
+Youtube: https://www.youtube.com/watch?v=6V4KhO6lM04
+
 ![llama.cs][llava]
 
 ## Introduction
