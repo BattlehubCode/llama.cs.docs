@@ -30,14 +30,14 @@ You can use the following link to download the model:
 
 > **Note**
 You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
-[https://github.com/ggerganov/llama.cpp/releases/tag/b1692](https://github.com/ggerganov/llama.cpp/releases/tag/b1692)
+[https://github.com/ggerganov/llama.cpp/releases/tag/b2042](https://github.com/ggerganov/llama.cpp/releases/tag/b2042)
 
 > **Note**
 if you have an NVIDIA GPU, use the cublas version for best performance:
-[https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip](https://github.com/ggerganov/llama.cpp/releases/download/b1692/llama-b1692-bin-win-cublas-cu11.7.1-x64.zip)
+[https://github.com/ggerganov/llama.cpp/releases/download/b2042/llama-b2042-bin-win-cublas-cu11.7.1-x64.zip](https://github.com/ggerganov/llama.cpp/releases/download/b2042/llama-b2042-bin-win-cublas-cu11.7.1-x64.zip)
 
 > **Note**
-The current supported version is b1692. Support for more recent versions will be added as soon as possible.
+The current supported version is b2042. 
 
 > **Note**
 To build llama.cpp from source, please refer to the following section:
