@@ -35,7 +35,7 @@ You might want to replace llama.dll and llava_shared.dll with one that fits your
 [https://github.com/ggerganov/llama.cpp/releases/tag/b3212](https://github.com/ggerganov/llama.cpp/releases/tag/b3212)
 
 > **Note**
-if you have an NVIDIA GPU, use the cuda version for best performance:
+if you have an NVIDIA GPU, use the cuda version for best performance
 
 > **Note**
 The current supported version is b3212. 
