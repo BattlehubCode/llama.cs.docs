@@ -21,24 +21,24 @@ The recommended machine is one with an 8GB Nvidia GPU, a modern processor, and 3
 
 ## Getting Started
 1. Open Assets/Battlehub/Chat scene
-2. Download **orca-2-7b.Q5_K_S.gguf** [here](https://huggingface.co/TheBloke/Orca-2-7B-GGUF/tree/main). 
-3. Copy orca-2-7b.Q5_K_S.gguf to **Assets/StreamingAssets** folder 
+2. Download **Meta-Llama-3-8B-Instruct.Q4_K_M.gguf** [here](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/tree/main). 
+3. Copy Meta-Llama-3-8B-Instruct.Q4_K_M.gguf to **Assets/StreamingAssets** folder 
 4. Enter play mode
 
 > **Note**
 You can use the following link to download the model:
-[https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true](https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true)
+[https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf?download=true](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf?download=true)
 
 
 > **Note**
 You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
-[https://github.com/ggerganov/llama.cpp/releases/tag/b2667](https://github.com/ggerganov/llama.cpp/releases/tag/b2667)
+[https://github.com/ggerganov/llama.cpp/releases/tag/b3212](https://github.com/ggerganov/llama.cpp/releases/tag/b3212)
 
 > **Note**
 if you have an NVIDIA GPU, use the cuda version for best performance:
 
 > **Note**
-The current supported version is b2667. 
+The current supported version is b3212. 
 
 > **Note**
 To build llama.cpp from source, please refer to the following section:
@@ -62,7 +62,7 @@ Implementation of Chat UI, comprising ChatUI.prefab, ChatUI.cs, and VirtualScrol
 <div style="page-break-after: always;"></div>
 
 ## Config Files
-Config files are JSON files with serialized **gpt_params** structure. Example config files can be found in the **Assets/StreamingAssets/Configs** folder. empty-gpt_params.json is an empty template with all available parameters, while orca-2-7b-gpt_params.json is a config file used for demonstration purposes in the Getting Started section. 
+Config files are JSON files with serialized **gpt_params** structure. Example config files can be found in the **Assets/StreamingAssets/Configs** folder. empty-gpt_params.json is an empty template with all available parameters, while llama-3-8B-instruct-gpt_params is a config file used for demonstration purposes in the Getting Started section. On Mac use llama-3-8B-instruct-osx_gpt_params
 
 To load a config file using the Chat UI, use the "Load gpt params" button.
 
@@ -164,14 +164,14 @@ namespace Battlehub.LLama.Examples
 
         private void Start()
         {
-            if (!File.Exists($"{Application.streamingAssetsPath}/orca-2-7b.Q5_K_S.gguf"))
+            if (!File.Exists($"{Application.streamingAssetsPath}/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf"))
             {
-                Debug.LogWarning("Download orca-2-7b.Q5_K_M.gguf and move it to the StreamingAssets folder. <a href=\"https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true\">https://huggingface.co/TheBloke/Orca-2-7B-GGUF/resolve/main/orca-2-7b.Q5_K_S.gguf?download=true</a>");
+                Debug.LogWarning("Download Meta-Llama-3-8B-Instruct.Q4_K_M.gguf and move it to the StreamingAssets folder. <a href=\"https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf?download=true\">https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf?download=true</a>");
             }
 
             if (string.IsNullOrEmpty(m_configPath))
             {
-                m_configPath = $"{Application.streamingAssetsPath}/Configs/orca-2-7b-gpt_params.json";
+                m_configPath = $"{Application.streamingAssetsPath}/configs/llama-3-8B-instruct-gpt_params.json";
             }
 
             m_host = gameObject.AddComponent<LLMHost>();
