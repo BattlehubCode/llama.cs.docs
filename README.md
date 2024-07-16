@@ -32,13 +32,13 @@ You can use the following link to download the model:
 
 > **Note**
 You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
-[https://github.com/ggerganov/llama.cpp/releases/tag/b3212](https://github.com/ggerganov/llama.cpp/releases/tag/b3212)
+[https://github.com/ggerganov/llama.cpp/releases/tag/b3389](https://github.com/ggerganov/llama.cpp/releases/tag/b3389)
 
 > **Note**
 if you have an NVIDIA GPU, use the cuda version for best performance
 
 > **Note**
-The current supported version is b3212. 
+The current supported version is b3389. 
 
 > **Note**
 To build llama.cpp from source, please refer to the following section [https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage](https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage)
