@@ -81,6 +81,7 @@ namespace Battlehub.LLama.Examples
     public class DummyLLM : ILLM
     {
         private string m_input;
+        private bool m_cancel;
 
         public IEnumerator<Response> Initialize()
         {
@@ -111,12 +112,22 @@ namespace Battlehub.LLama.Examples
                 for (int i = 0; i < tokens.Length; i++) 
                 {
                     Thread.Sleep(100);
+                    if (m_cancel)
+                    {
+                        m_cancel = false;
+                        break;
+                    }
                     yield return new Response($"{tokens[i]} ", ResponseType.Token);
                 }
             }
 
             yield return new Response("Chat Ended", ResponseType.Log);
             yield return new Response(ResponseType.EndOfText);
+        }
+
+        public void Cancel()
+        {
+            m_cancel = true;
         }
 
         public void Dispose()
