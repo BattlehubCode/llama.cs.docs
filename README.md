@@ -31,7 +31,7 @@ You can use the following link to download the model:
 
 
 > **Note**
-You might want to replace llama.dll and llava_shared.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
+You might want to replace llama.dll with one that fits your platform (see **Assets\Battlehub\LLama\Plugins** folder):
 [https://github.com/ggerganov/llama.cpp/releases/tag/b5588](https://github.com/ggerganov/llama.cpp/releases/tag/b5588)
 
 > **Note**
