@@ -41,7 +41,8 @@ if you have an NVIDIA GPU, use the cuda version for best performance
 The current supported version is b5588. 
 
 > **Note**
-To build llama.cpp from source, please refer to the following section [https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage](https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage)
+To build llama.cpp from source, please refer to the following section [https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md)
+Additional information can be found in Assets/Battlehub/README file
 
 ![Getting Started Result][getting_started_result]
 
